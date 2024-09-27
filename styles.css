@@ -1,27 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
     
+}
+
+main {
+    width: 100%;
 }
 
 body {
     font-family: 'Roboto Mono';
-    background-image: url("/images/backcover2.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 0;
+    background: bisque;
+    margin: 0;
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
 }
 
-.banner {
-    margin-top: 0;
-    width: 100%;
-    height: 20%;
-    background-image: url("/images/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+nav {
+    border: 1px solid black;
+    background-color: #765b3c;
+    overflow: auto;
+    padding: 2px;
 }
 
 nav .logo p {
@@ -59,17 +60,6 @@ nav li a {
     line-height: 10px;
 }
 
-@media screen and (max-width:1080px) {
-    nav li {
-        padding: 0px 10px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    nav a {
-        display: none;
-    }
-}
 
 nav li a:hover {
     color: black;
@@ -84,102 +74,99 @@ h1 {
 }
 
 h2 {
-    position: relative;
-    top: 70px;
-    padding: 8px;
-}
-
-p {
-    position: relative;
-    top: 100px;
+    margin-top: 70px;
+    margin-left: 100px;
 }
 
 .pe-img {
-    width: 35%;
-    float: right;
-    margin-top: 100px;
-    margin-right: 50px ;
+    max-width: 50%;
+    margin-top: 30px;
+    margin-left: 300px;
     border: 4px solid black;
     border-radius: 10px;
 }
 
+@media only screen  and (max-width: 930px) {
+    .pe-img {
+        max-width: 70%;
+        margin-top: 30px;
+        margin-left: 15%;
+        border: 4px solid black;
+        border-radius: 10px;
+        
+    }
+}
+    
 .text {
-    max-width: 650px;
-    margin-top: -30px;
-    margin-left: 10px;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-left: 100px;
     padding: 8px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.second-text {
+/*.second-text {
+    max-width: 80%;
     position: relative;
     top: 30px ;
-    text-shadow: 0 0 2px black;
-    color: whitesmoke;
     clear: right;
-    margin-left: 6px;
+    margin-left: 100px;
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
+} */
+
+@media screen and (max-width: 930px){
+    .text, .second-text {
+    max-width: 80%;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    }
 }
 
 .container {
     display: flex; 
-    flex-direction: row;
+    max-width: 100%;
+    
+}
 
+@media screen and (max-width: 930px){
+    .container {
+        max-width: 100%;
+        display: block;
+        float: left;
+        margin-left: 2%;
+    }
 }
 
 .item {
-    width: 45%;
-    height: 50%;
-    margin-left: 60px;
-    margin-top: 60px;
+    max-width: 40%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     border: 5px solid black;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
-.item-2 {
-    width: 45%;
-    height: 50%;
-    margin-left: 50px;
-    margin-right: 35px;
-    margin-top: 60px;
-    border: 5px solid black;
-    border-radius: 50px;
+@media screen and (max-width: 930px){
+    .item {
+        max-width: 60%;
+        margin-left: 15%;
+
+    }
 }
 
-.item-3 {
-    width: 45%;
-    height: 50%;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    border: 5px solid black;
-    border-radius: 50px;
-}
-
-.activity-info {
+.btn {
     position: relative;
-    top: 35px;
-    right: 200px;
-    color: whitesmoke;
-    text-shadow: 0 0 1px black;
-}
-
-.activity-info-2 {
-    position: relative;
-    top: 35px;
-    right: 220px;
-    color: whitesmoke;
-    text-shadow: 0 0 1px black;
-}
-
-.activity-info-3 {
-    position: relative;
-    top: 35px;
-    right: 190px;
-    color: whitesmoke;
-    text-shadow: 0 0 1px black;
+    left: 45%;
+    margin: 5px;
+    padding: 7px;
+    background-color: #f3d3ae;
+    border-radius: 5px;
 }
 
 .sim-pic {
@@ -204,16 +191,16 @@ p {
 }
 
 .card-title{
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .guide {
-    margin-top: -80px;
+    margin-top: 5px;
 }
 
 .contact-text {
     text-align: center;
-    margin-top: -90px;
+    margin-top: 10px;
     padding: 10px;
     font-weight: bold;
     
@@ -221,5 +208,5 @@ p {
 
 i {
     position: relative;
-    top: 120px;
+    top: 20px;
 }

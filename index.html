@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Gqeberha</title>
 </head>
-<body class="cover-img">
-    <nav class="banner" >
+<body>
+    <nav>
         <div class="logo">
             <p>Gqeberha</p>
         </div>
@@ -28,7 +28,6 @@
         <h2>About</h2>
 
     <div id="about">
-        <img class="pe-img" src="/images/pe-img.webp">
         <p class="text">
             Port Elizabeth (PE) is not only home to stunning beaches, interesting museums and award-winning wildlife destinations, but also some of the friendliest people in the country. It’s no surprise to visitors that it’s called the “Friendly City”.
             
@@ -36,8 +35,11 @@
             
             It’s one of the largest cities in South Africa, lying 770km east of Cape Town where it forms part of the Nelson Mandela Bay Metro, which links the city with the inland industrial towns of Uitenhage and Despatch.
         </p>
+        <div>
+            <img class="pe-img" src="/images/pe-img.webp">
+        </div>
         
-        <p class="second-text">
+        <p class="text">
             When you want to hit the beach, Algoa Bay, the coastal strip of Nelson Mandela Bay, is a 40km-stretch of beaches with protected areas for swimming at Kings Beach, Hobie Beach, Humewood Beach (a world-class, Blue Flag beach), Pollock Beach and Denville Beach. Fishing, surfing, scuba diving, snorkelling and sailing are enjoyed at the quieter spots including Wildside, Sardinia Bay, Blue Horizon Bay, Bluewater Bay, Beachview and Schoenmakerskop.
 
             If you’re interested in culture, you’ve got to check out the Red Location Museum, a museum in New Brighton Township that portrays “both the horrors of institutionalised racism and the heroic efforts of the anti-apartheid movement”.
@@ -45,23 +47,11 @@
     </div>
 </main>
 <div id="activities" class="container">  
-
-        <img class="item" src="/images/surf3.jpg" alt="A surfer guy riding a big wave">
-        <h3 class="activity-info">
-            Surfing 
-        </h3>
-    
-        <img class="item-2" src="/images/museum1.jpg" alt="A lion with its mouth half open">
-        <h3 class="activity-info-2">
-            Museum 
-        </h3>
-    
-        <img class="item-3" src="/images/food1.jpg" alt="A Rhino charging">
-        <h3 class="activity-info-3">
-           Food 
-        </h3>
-    
+        
+            <img id="image" class="item"> 
 </div>
+    <button class="btn" id="previous">Previous</button>
+    <button class="btn" id="next">Next</button>
 
 <footer id="contacts">
     <div class="card">
@@ -72,10 +62,11 @@
             <i class="fa fa-plane"></i>
         </div>
     </div>
-    <p class="contact-text">Contact your trusted Tour Guide <a href="">here</a> <br>
+    <p class="contact-text">Contact your trusted Tour Guide <a href="mailto:mrmabuya@yahoo.com">Email</a> <br>
     I was born and bred in Gqeberha, and I know every coner of the Windy City.
     </p>
-  
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
